@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 INCLUDE(CheckIncludeFiles)
 
 PROJECT(uclient C)
-ADD_DEFINITIONS(-Os -Wall -Werror --std=gnu99 -g3 -Wmissing-declarations)
+ADD_DEFINITIONS(-Os -Wall -Werror --std=gnu99 -g3 -Wmissing-declarations -Wno-error=unused-result)
 
 SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
 
